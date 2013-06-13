@@ -1,0 +1,2 @@
+javascript:(function(){var yammit = function () { var notice = document.getElementsByClassName('yj-notice-text')[0];if (notice.innerHTML!=='') {var msg = notice.innerHTML;var filter=/\d+/;var numberOfMessage=msg.match(filter);window.document.title ='('+numberOfMessage+')NEW MESSAGES';}};window.onclick = function () {window.document.title = "Yammer: Home";document.getElementsByClassName('yj-notice-text')[0].innerHTML='';};setInterval(yammit,'2000');alert('Yammit: Started');
+}());
